@@ -4,6 +4,9 @@ function displayPoem(response) {
       autoStart: true,
       delay: 1,
       cursor: "",
+    }).callFunction(() => {
+      document.querySelector("#poem").innerHTML +=
+        "<br><strong>SheCodes AI</strong>";
     });
   }
   
